@@ -52,11 +52,11 @@ export default function Index() {
         };
     }, []);
     
-    const isProjectsPage = pathname === '/projects' || pathname === '/about';
+    const isContactPage = pathname === '/contact';
 
     return (
         <>
-            <div ref={header} className={`${styles.header} ${isProjectsPage ? styles.headerBlack : ''}`}>
+            <div ref={header} className={`${styles.header} ${isContactPage ? styles.headerBlack : ''}`}>
                 <div className={styles.logo}>
                     <p className={styles.copyright}>©</p>
                     <div className={styles.name}>
